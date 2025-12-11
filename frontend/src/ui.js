@@ -10,7 +10,9 @@ import { InputNode } from './nodes/inputNode';
 import { LLMNode } from './nodes/llmNode';
 import { OutputNode } from './nodes/outputNode';
 import { TextNode } from './nodes/textNode';
-
+import { TransformNode } from './nodes/transformNode';
+import { FilterNode } from './nodes/filterNode';
+import { DelayNode } from './nodes/delayNode';
 import 'reactflow/dist/style.css';
 
 const gridSize = 20;
@@ -20,6 +22,9 @@ const nodeTypes = {
   llm: LLMNode,
   customOutput: OutputNode,
   text: TextNode,
+  transform : TransformNode,
+  filter : FilterNode,
+  delay : DelayNode,
 };
 
 const selector = (state) => ({
