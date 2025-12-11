@@ -1,6 +1,6 @@
 import { BaseNode } from './baseNode';
-import { InputNodeConfig } from './nodeConfigs';
+import { OutputNodeConfig } from './nodeConfigs';
 
 export const OutputNode = (props) => {
-  return <BaseNode {...props} config={InputNodeConfig} />;
+  return <BaseNode {...props} config={OutputNodeConfig} />;
 };
