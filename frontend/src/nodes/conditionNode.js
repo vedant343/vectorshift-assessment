@@ -1,5 +1,5 @@
 import { BaseNode } from './baseNode';
-import { InputNodeConfig } from './nodeConfigs';
+import { ConditionNodeConfig } from './nodeConfigs';
 
 export const ConditionNode = (props) => {
   return <BaseNode {...props} config={ConditionNodeConfig} />;

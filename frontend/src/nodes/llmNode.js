@@ -1,6 +1,6 @@
 import { BaseNode } from './baseNode';
-import { InputNodeConfig } from './nodeConfigs';
+import { LLMNodeConfig } from './nodeConfigs';
 
 export const LLMNode = (props) => {
-  return <BaseNode {...props} config={InputNodeConfig} />;
+  return <BaseNode {...props} config={LLMNodeConfig} />;
 };
