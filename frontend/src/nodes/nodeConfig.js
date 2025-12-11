@@ -122,11 +122,7 @@ export const TextNodeConfig = {
   ]
 };
 
-// ========================================
-// NEW NODES (5 New Nodes to Showcase Flexibility)
-// ========================================
-
-// 1. Filter Node - Demonstrates multiple field types
+// Filter Node - Demonstrates multiple field types
 export const FilterNodeConfig = {
   type: 'Filter',
   style: {
@@ -277,44 +273,6 @@ export const ConditionNodeConfig = {
       position: 'Right',
       id: 'false',
       style: { top: '66%' }
-    }
-  ]
-};
-
-// 5. Delay Node - Demonstrates static content with fields
-export const DelayNodeConfig = {
-  type: 'Delay',
-  style: {
-    width: 200,
-    height: 80,
-    border: '1px solid black'
-  },
-  content: 'Pauses execution',
-  fields: [
-    {
-      name: 'delayAmount',
-      label: 'Delay',
-      fieldType: 'text',
-      defaultValue: '1000'
-    },
-    {
-      name: 'delayUnit',
-      label: 'Unit',
-      fieldType: 'select',
-      options: ['Milliseconds', 'Seconds', 'Minutes'],
-      defaultValue: 'Milliseconds'
-    }
-  ],
-  handles: [
-    {
-      type: 'target',
-      position: 'Left',
-      id: 'input'
-    },
-    {
-      type: 'source',
-      position: 'Right',
-      id: 'output'
     }
   ]
 };
